@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addstudent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* height: 100vh; */
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .form-group span {
+            font-size: 0.9rem;
+            color: #888;
+            display: block;
+            margin-top: 5px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* input[type="submit"]:hover {
+            background-color: #0056b3;
+        } */
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 30px;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container m-3">
+        <h2><strong>ADD STUDENT</strong></h2>
+        <div>
+            <div class="form-group">
+                <label for="firstname">Full firstname</label>
+                <input type="text" id="firstname" firstname="firstname" placeholder="Enter your full firstname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastname">Full lastname</label>
+                <input type="text" id="lastname" lastname="lastname" placeholder="Enter your full lastname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <span>At least 8 characters</span>
+            </div>
+           
+            
+            <div class="form-group">
+                <label for="student">STUDENT</label>
+                <input type="text" id="student" name="student" placeholder="Text () " required>
+            </div>
+
+            <div class="form-group">
+                <label for="cnic">CNIC</label>
+                <input type="text" id="cnic" name="cnic" placeholder="Text () " required>
+            </div>
+            <button onclick="save()" class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outlinejs-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Submit</button>
+
+        </div>
+    </div>
+<script type="module" src="/administrationportal/addstudent/addstudent.js"></script>
+</body>
+</html>
